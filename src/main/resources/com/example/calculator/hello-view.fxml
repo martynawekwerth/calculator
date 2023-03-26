@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="440.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.calculator">
+   <children>
+      <Label fx:id="SecondNumber" alignment="CENTER" layoutX="22.0" layoutY="86.0" prefHeight="11.0" prefWidth="141.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelResult" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="45.0" prefHeight="58.0" prefWidth="302.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font></Label>
+      <TextField fx:id="result" alignment="CENTER_RIGHT" editable="false" layoutX="14.0" layoutY="12.0" prefHeight="100.0" prefWidth="410.0" styleClass="text" stylesheets="@design.css">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="10.0" layoutY="123.0" prefHeight="510.0" prefWidth="420.0">
+         <children>
+            <Pane layoutX="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button1" layoutY="-2.0" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard" text="1" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="320.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonPlus" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="+" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="215.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button3" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="3" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="110.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button2" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="5.0" layoutY="101.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button4" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="4" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="320.0" layoutY="101.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonMinus" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="-" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="215.0" layoutY="101.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button6" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="6" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="110.0" layoutY="101.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button5" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="5" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="5.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button7" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="7" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="320.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonMulti" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="*" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="215.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button9" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="9" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="110.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button8" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="8" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="5.0" layoutY="303.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="button0" mnemonicParsing="false" onMouseClicked="#onMouseNumberClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="320.0" layoutY="303.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonDiv" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="/" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="110.0" layoutY="303.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="200.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonEquals" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="200.0" styleClass="keyboard" text="=" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane layoutX="5.0" layoutY="404.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonClear" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="C" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="320.0" layoutY="404.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonNegation" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard" text="+/-" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="215.0" layoutY="404.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonPower" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="X^n " textAlignment="CENTER">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="110.0" layoutY="404.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="95.0" styleClass="keyboard">
+               <children>
+                  <Button fx:id="buttonRoot" mnemonicParsing="false" onMouseClicked="#onMouseOperatorClicked" prefHeight="89.0" prefWidth="95.0" styleClass="keyboard" text="√a" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label fx:id="FirstNumber" alignment="CENTER" layoutX="32.0" layoutY="17.0" prefHeight="17.0" prefWidth="119.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Operation" alignment="CENTER" layoutX="82.0" layoutY="51.0" prefHeight="21.0" prefWidth="19.0" text="." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
